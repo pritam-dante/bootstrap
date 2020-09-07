@@ -388,6 +388,11 @@
       //to get the current year for the copyright
       $('#year').text(new Date().getFullYear());
 
+      //navbar collapse after clicking
+      $('.navbar-nav>li>a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+
       //init scrollspy
       $('body').scrollspy({ target: '#main-nav' });
 
